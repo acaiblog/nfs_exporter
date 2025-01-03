@@ -12,8 +12,10 @@ RUN CGO_ENABLED=0 GOOS=linux go build -a -installsuffix cgo -o nfs_exporter .
 # 使用轻量级的 alpine 镜像作为最终镜像
 FROM alpine:latest
 
-# 安装必要的依赖（如果需要）
-# RUN apk --no-cache add ca-certificates
+RUN apk update
+
+# 安装必要的依赖，包括 showmount 命令
+RUN apk --no-cache add ca-certificates nfs-utils
 
 # 设置工作目录
 WORKDIR /root/
