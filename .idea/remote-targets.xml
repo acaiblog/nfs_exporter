@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="RemoteTargetsManager">
+    <targets>
+      <target name="WSL - CentOS8" type="wsl" uuid="92bee723-2321-4865-904e-1b8a81635799">
+        <config>
+          <option name="distributionMsId" value="CentOS8" />
+          <option name="projectRootOnTarget" value="{exitCode=0, timeout=false, cancelled=false, stdout=/tmp/tmp.IyotKO6E8A&#10;, stderr=}/nfs_exporter" />
+        </config>
+        <ContributedStateBase type="GoLanguageRuntime">
+          <config>
+            <option name="compiledExecutablesVolume">
+              <VolumeState>
+                <option name="remotePath" value="/opt" />
+              </VolumeState>
+            </option>
+            <option name="goRoot" value="/opt/go/bin/go" />
+          </config>
+        </ContributedStateBase>
+      </target>
+    </targets>
+  </component>
+</project>
